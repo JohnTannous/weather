@@ -5,22 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <title>Weather Dashboard</title>
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-dark bg-primary">
             <span class="navbar-brand h1 w-100 text-center">Weather Dashboard</span>
         </nav>
         <main class="container-fluid">
             <div class = "row">
-                <div class="col-12 col-md-3 p-2 search-column">
-                    <form class = "border p-2" id = "city-search-form">
+                <div class="col-12 bg-light col-md-3 p-2 search-column">
+                    <form class = "border p-2" id = "city-submit">
                         <h4>Search for a City</h2>
                         <input id="city" type = "text" autofocus = "true" class = "form-input"/>
                         <button class = "btn btn-primary" type = "submit">Search</button>
                     </form>
-                    <div class = "past-search border" id = "past-search-buttons"></div>
+                    <div class = "d-flex flex-column justify-content-center align-content-center p-2" id = "past-search-buttons"></div>
                 </div>
                 <div class="col-12 col-md-9">
                     <div class = "row border selected-city" id = "current-forecast">
@@ -30,7 +30,7 @@
                         </div>  
                     </div>
                     <div class = "row border" id = "five-day-forecast">
-                            <h2 class= "col-12" id = "forecast"></h2>
+                            <h2 class= "col-12" id = "five-day-title"></h2>
                             <div class = "d-flex" id = "fiveday-container"></div>
                     </div>  
                 </div>
@@ -38,6 +38,6 @@
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/weather.js"></script>
     </body>
 </html>
